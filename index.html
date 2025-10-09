@@ -5,32 +5,42 @@
   <meta charset="UTF-8" />
   <title>Kracked.net</title>
   <style>
-    body {
+    html, body {
+      height: 100%;
+      margin: 0;
       background-color: #0a0a0a;
       color: #ff66cc;
       font-family: "Courier New", monospace;
-      font-size: 3em;
+    }
+
+    body {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
 
     h1 {
-      margin-bottom: 5px; /* reduce space below text */
+      font-size: 3em;
+      margin: 0 0 5px 0; /* small space below the heading */
     }
 
     img {
-      margin-top: 5px;  /* small gap between text and image */
       max-width: 60%;
       height: auto;
     }
   </style>
 </head>
 <body>
-  <h1>Aaron is a DICK.</h1>
-  <img src="aaron_dick_dick.png" alt="Aaron Dick Image" />
+  <div class="container">
+    <h1>Aaron is a DICK.</h1>
+    <img src="aaron_dick.png" alt="Aaron Dick Image" />
+  </div>
 </body>
 </html>
