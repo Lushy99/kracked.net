@@ -11,14 +11,22 @@
       font-family: "Courier New", monospace;
       font-size: 3em;
       display: flex;
+      flex-direction: column; /* stack elements vertically */
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
     }
+
+    img {
+      margin-top: 20px; /* space between text and image */
+      max-width: 60%;   /* scale image responsively */
+      height: auto;
+    }
   </style>
 </head>
 <body>
   <h1>Aaron is a DICK.</h1>
+  <img src="aaron_dick.png" alt="Aaron Dick Image" />
 </body>
 </html>
